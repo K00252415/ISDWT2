@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Roscrea Health || Home</title>
+    <title>Roscrea Health || BMI</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="images/favicon.ico" rel="shortcut icon">
@@ -30,40 +30,54 @@
         </nav>
         <br>
         <main>
+            <div class="bmiBorder">
+                <h1>Body Mass Index Calculator</h1>
+                <p>Enter your height (Meters): <input type="text" id="height" />
+                </p>
+                <p>Enter your weight (Kilograms): <input type="text" id="weight" />
+                </p>
+                <input type="submit" value="Calculate BMI" class="buttonBMI" onclick="computeBMI();">
+                <h2>Your BMI is: <span id="output">?</span></h2>
 
-            <div id="hero">
-
-                <ul id="image_list">
-                    <li><a href="images/fruit.jpg" title="Eat Healthy">
-                            <img src="images/fruit.jpg" alt="Fruit" class="temp"></a></li>
-                    <li><a href="images/walking.jpg" title="Woman Walking">
-                            <img src="images/walking.jpg" alt="Woman Walking" class="temp"></a></li>
-                    <li><a href="images/running.jpg" title="Man Running">
-                            <img src="images/running.jpg" alt="Man Running" class="temp"></a></li>
-                    <li><a href="images/cyclist.jpg" title="Woman Cycling">
-                            <img src="images/cyclist.jpg" alt="Woman Cycling" class="temp"></a></li>
-                </ul>
-
-                <p class="slideImage"><img id="main_image" src="images/fruit.jpg" alt="Eat Healthy"></p>
-
+                <h3>This means you are: <span id="comment"> ?</span> </h3>
             </div>
             <br>
-            <div class="indexText">
-                <h1> Welcome to Roscrea Health!</h1>
-                <h2>Why be healthy?</h2>
-                <p>Staying healthy physically can help you stay healthy emotionally too. If you're eating the right food and keeping fit, your body will be strong and help you to cope with stress and also fight illness. Eating well and exercising often when you're a teenager will also help you stay in good health later in life.</p>
-
-                <h3>How to be healthy?</h3>
+            <div class="healthRisks">
+                <h2>BMI Risks</h2>
+                <h3>Underweight</h3>
                 <ul>
-                    <li>Eat healthy.</li>
-                    <li>Get regular exercise.</li>
-                    <li>Lose weight if you’re overweight.</li>
-                    <li>Protect your skin.</li>
-                    <li>Practice safe sex.</li>
-                    <li>Don’t smoke or use tobacco.</li>
-                    <li>Limit how much alcohol you drink.</li>
+
+                    <li>Weakened immune system</li>
+                    <li>Nutritional deficiencies</li>
+                    <li>Fertility problems</li>
+                </ul>
+
+
+                <h3>Healthy</h3>
+                <p>No Health risks.</p>
+                <h3>Overweight</h3>
+                <ul>
+
+                    <li>type 2 diabetes</li>
+                    <li>high blood pressure</li>
+                    <li>heart disease and strokes</li>
+                    <li>certain types of cancer</li>
+                    <li>sleep apnea</li>
+                    <li>osteoarthritis</li>
+                    <li>fatty liver disease</li>
+                    <li>kidney disease</li>
+                    <li>pregnancy problems, such as high blood sugar during pregnancy,
+                        high blood pressure, and increased risk
+                        for cesarean delivery (C-section)</li>
+
+
 
                 </ul>
+
+
+                <h3>Obese</h3>
+                <p>Same outcome of being overweight with increased risks.</p>
+
             </div>
         </main>
 

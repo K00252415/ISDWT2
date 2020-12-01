@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Roscrea Health || Home</title>
+    <title>Roscrea Health || Add a Product</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="images/favicon.ico" rel="shortcut icon">
@@ -30,43 +30,36 @@
         </nav>
         <br>
         <main>
-
-            <div id="hero">
-
-                <ul id="image_list">
-                    <li><a href="images/fruit.jpg" title="Eat Healthy">
-                            <img src="images/fruit.jpg" alt="Fruit" class="temp"></a></li>
-                    <li><a href="images/walking.jpg" title="Woman Walking">
-                            <img src="images/walking.jpg" alt="Woman Walking" class="temp"></a></li>
-                    <li><a href="images/running.jpg" title="Man Running">
-                            <img src="images/running.jpg" alt="Man Running" class="temp"></a></li>
-                    <li><a href="images/cyclist.jpg" title="Woman Cycling">
-                            <img src="images/cyclist.jpg" alt="Woman Cycling" class="temp"></a></li>
-                </ul>
-
-                <p class="slideImage"><img id="main_image" src="images/fruit.jpg" alt="Eat Healthy"></p>
-
-            </div>
-            <br>
-            <div class="indexText">
-                <h1> Welcome to Roscrea Health!</h1>
-                <h2>Why be healthy?</h2>
-                <p>Staying healthy physically can help you stay healthy emotionally too. If you're eating the right food and keeping fit, your body will be strong and help you to cope with stress and also fight illness. Eating well and exercising often when you're a teenager will also help you stay in good health later in life.</p>
-
-                <h3>How to be healthy?</h3>
-                <ul>
-                    <li>Eat healthy.</li>
-                    <li>Get regular exercise.</li>
-                    <li>Lose weight if you’re overweight.</li>
-                    <li>Protect your skin.</li>
-                    <li>Practice safe sex.</li>
-                    <li>Don’t smoke or use tobacco.</li>
-                    <li>Limit how much alcohol you drink.</li>
-
-                </ul>
-            </div>
+                <div class="productForm">
+                    <h3>Add a Product</h3>
+            <form action="#" method="post">
+                <fieldset>
+                    <br>
+                    <p>* = Required</p>
+                    <label for="pName">*Product Name:</label>
+                    <input type="text" id="pName" placeholder="Enter Product Name">
+                    <br>
+                    <br>    
+                    <label for="pID">*Product ID:</label>
+                    <input type="text" id="pID" placeholder="Enter Product ID">
+                    <br>
+                    <br>
+                    <label for="pPrice">*Price:</label>
+                    <input type="text" id="pPrice" placeholder="Enter Product Price">
+                    <br>
+                    <br>
+                    <label for="pStock">*Stock:</label>
+                    <input type="text" id="pStock" placeholder="Enter Stock">
+                    <br>
+                    <br>
+                    <button type="submit">Add Product</button> <button type="reset">Reset</button>
+                    <br>
+                    <br>
+                    </fieldset>
+                    </form>
+                </div>
         </main>
-
+        <br>
         <footer>
 
             <div class="footerDiv">
@@ -106,6 +99,7 @@
         </footer>
     </div>
     <script src="jsMain.js"></script>
+    <script src="loginValidation.js"></script>
 </body>
 
 </html>

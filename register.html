@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Roscrea Health || Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="cssMain.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="images/logo.png" alt="Roscrea Health Logo" />
+        </header>
+        <nav class="topnav" id="myTopnav">
+
+            <a href="index.html" class="home">Home</a>
+            <a href="bmi.html">Calculate BMI</a>
+            <a href="login.html">Login/Register</a>
+            <a href="wellbeing.html">Wellbeing</a>
+            <div class="search">
+                <input type="text" placeholder="Search" />
+                <button type="submit">Search</button>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+        <br>
+        <main>
+            <div class="registerPageDiv">
+                <h3>Register</h3>
+                <div class="registerForm">
+
+                    <form action="#" method="post" id="regForm">
+                        <fieldset>
+                            <br>
+                            <p>* = Required</p>
+                            <div>
+                                <label for="fName">First Name:</label>
+                                <input type="text" id="fName" placeholder="Enter your First Name">
+                                <span id="firstName_Error">*</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="lName">Last Name:</label>
+                                <input type="text" id="lName" placeholder="Enter your Last Name">
+                                <span id="lastName_Error">*</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="text" id="email" placeholder="Enter Email Address">
+                                <span id="emailAddress1_Error">*</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="email2">Confirm Email:</label>
+                                <input type="text" id="email2" placeholder="Enter Email Address">
+                                <span id="emailAddress2_Error">*</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" placeholder="Enter Password">
+                                <span id="password_Error">*</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="address1">Address Line 1:</label>
+                                <input type="text" id="address1" placeholder="Enter Address Line 1">
+                                <span id="address1_Error">*</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="address2">Address Line 2:</label>
+                                <input type="text" id="address2" placeholder="Enter Address Line 1">
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="town">Town:</label>
+                                <input type="text" id="town" placeholder="Enter your Town">
+                                <span id="town_Error">*</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="county">County:</label>
+                                <input type="text" id="county" placeholder="Enter your County">
+                                <span id="county_Error">*</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="eircode">EirCode:</label>
+                                <input type="text" id="eircode" placeholder="Enter your EirCode">
+                                <span id="eircode_Error">*</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div>
+                                <label for="phoneNo">Phone No:</label>
+                                <input type="tel" id="phoneNo" placeholder="Enter your Phone Number">
+                                <span id="phone_Error">*</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="buttonAlign">
+                                <button type="button" id="registerButton">Register</button><button type="reset">Reset</button>
+                            </div>
+                            <br>
+                            <br>
+                        </fieldset>
+                        <br>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+
+            <div class="footerDiv">
+
+                <h3>Useful Links</h3>
+                <ul>
+
+                    <li><a href="#">Metabolism</a></li>
+                    <li><a href="#">Lose weight</a></li>
+                    <li><a href="#">Fun Exercises</a></li>
+
+                </ul>
+
+            </div>
+            <div class="footerDiv">
+
+                <h3>Navigation</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stafflogin.html">Administration Portal</a></li>
+                </ul>
+            </div>
+            <div class="footerDiv">
+
+                <h3>Contact Us</h3>
+                <p>Email:<a href="mailto:help@roscreahealth.ie">help@roscreahealth.ie</a></p>
+                <p>Contact Number:</p>
+                <p>0505 12345</p>
+
+            </div>
+            <div class="copyright">
+
+                <p> &#169; Roscrea Health by Eoin Kiely - K00252415 | <span id="date"></span> </p>
+
+            </div>
+        </footer>
+    </div>
+    <script src="jsMain.js"></script>
+    <script src="formValidation.js"></script>
+</body>
+
+</html>

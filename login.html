@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Roscrea Health || Home</title>
+    <title>Roscrea Health || Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="images/favicon.ico" rel="shortcut icon">
@@ -30,41 +30,36 @@
         </nav>
         <br>
         <main>
+            <br>
+            <div class="twoLoginDiv">
+                <h3>Login</h3>
+                <div class="loginDiv">
 
-            <div id="hero">
+                    <form action="#" method="post" id="logForm">
+                        <fieldset>
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" placeholder="Enter Email Address">
+                            <span id="emailAddress1_Error">*</span>
+                            <br>
+                            <br>
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" placeholder="Enter Password">
+                            <span id="password_Error">*</span>
+                            <br>
+                            <br>
+                            <button type="button" id="loginButton">Login</button>
+                        </fieldset>
 
-                <ul id="image_list">
-                    <li><a href="images/fruit.jpg" title="Eat Healthy">
-                            <img src="images/fruit.jpg" alt="Fruit" class="temp"></a></li>
-                    <li><a href="images/walking.jpg" title="Woman Walking">
-                            <img src="images/walking.jpg" alt="Woman Walking" class="temp"></a></li>
-                    <li><a href="images/running.jpg" title="Man Running">
-                            <img src="images/running.jpg" alt="Man Running" class="temp"></a></li>
-                    <li><a href="images/cyclist.jpg" title="Woman Cycling">
-                            <img src="images/cyclist.jpg" alt="Woman Cycling" class="temp"></a></li>
-                </ul>
+                    </form>
 
-                <p class="slideImage"><img id="main_image" src="images/fruit.jpg" alt="Eat Healthy"></p>
-
+                </div>
+                <hr>
+                <div class="registerDiv">
+                    <h3>New to Roscrea Health? Click below to register</h3>
+                    <a href="register.html">Click here to Register</a>
+                </div>
             </div>
             <br>
-            <div class="indexText">
-                <h1> Welcome to Roscrea Health!</h1>
-                <h2>Why be healthy?</h2>
-                <p>Staying healthy physically can help you stay healthy emotionally too. If you're eating the right food and keeping fit, your body will be strong and help you to cope with stress and also fight illness. Eating well and exercising often when you're a teenager will also help you stay in good health later in life.</p>
-
-                <h3>How to be healthy?</h3>
-                <ul>
-                    <li>Eat healthy.</li>
-                    <li>Get regular exercise.</li>
-                    <li>Lose weight if you’re overweight.</li>
-                    <li>Protect your skin.</li>
-                    <li>Practice safe sex.</li>
-                    <li>Don’t smoke or use tobacco.</li>
-                    <li>Limit how much alcohol you drink.</li>
-
-                </ul>
-            </div>
         </main>
 
         <footer>
@@ -106,6 +101,7 @@
         </footer>
     </div>
     <script src="jsMain.js"></script>
+    <script src="loginValidation.js"></script>
 </body>
 
 </html>
